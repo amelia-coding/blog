@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /vue-logo.png
+# heroImage: /vue-logo.png
 heroText: blog-demo
 tagline: 博客示例
 actionText: 快速上手 →
