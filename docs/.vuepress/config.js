@@ -1,18 +1,34 @@
 module.exports = {
-  title: "amelia-blog",
-  description: "Vuepress blog demo",
+  title: "Amelia的前端博客",
+  description: "我的前端日常日志，学习共勉",
+  head: [["link", { rel: "icon", href: "/logo.jpeg" }]],
   themeConfig: {
     // 你的GitHub仓库，请正确填写
-    repo: "https://github.com/xxxxxxx/blog-demo",
+    repo: "https://amelia-coding.github.io/",
     // 自定义仓库链接文字。
-    repoLabel: "My GitHub",
+    repoLabel: "GitHub",
     nav: [
-      { text: "Home", link: "/" },
-      { text: "FirstBlog", link: "/blog/FirstBlog.md" }
+      {
+        text: "博客",
+        link: "/blog/"
+      },
+      {
+        text: "面试",
+        link: "/interview/"
+      },
+      {
+        text: "阅读",
+        link: "/book/"
+      }
     ],
-    sidebar: [
-      ["/", "首页"],
-      ["/blog/FirstBlog.md", "我的第一篇博客"]
-    ]
+    sidebar: {
+      "/blog/": [
+        {
+          title: "JS",
+          collapsable: false,
+          children: ["js-basic1"]
+        }
+      ]
+    }
   }
 };
