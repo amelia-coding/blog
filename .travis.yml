@@ -7,6 +7,7 @@ script:
   - npm run docs:build # npm run docs:build
 deploy:
   provider: pages
+  target-branch: master
   skip_cleanup: true
   local_dir: docs/.vuepress/dist
   repo: amelia-coding/amelia-coding.github.io
