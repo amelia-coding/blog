@@ -1,9 +1,9 @@
 ---
 home: true
-heroImage: /logo.jpeg
+heroImage: /new-logo.jpg
 heroText: Amelia的前端博客
 tagline: 路漫漫其修远兮
-actionText: 快速上手 →
+actionText: 开始阅读 →
 actionLink: /blog/
 features:
   - title: 学习

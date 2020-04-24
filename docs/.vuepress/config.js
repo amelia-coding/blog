@@ -1,7 +1,7 @@
 module.exports = {
   title: "Amelia的前端博客",
   description: "我的前端日常日志，学习共勉",
-  head: [["link", { rel: "icon", href: "/logo.jpeg" }]],
+  head: [["link", { rel: "icon", href: "/new-logo.jpg" }]],
   themeConfig: {
     // 你的GitHub仓库，请正确填写
     repo: "https://amelia-coding.github.io/",

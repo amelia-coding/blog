@@ -8,7 +8,7 @@ JS 对于每位前端开发都是必备技能，在小册中我们也会有多�
 原始（Primitive）类型
 涉及面试题：原始类型有哪几种？null 是对象嘛？
 
-在 JS 中，存在着 6 种原始值，分别是：
+在 JS 中，存在着 7 种原始值，分别是：
 
 boolean
 null
@@ -16,6 +16,7 @@ undefined
 number
 string
 symbol
+bigInt
 首先原始类型存储的都是值，是没有函数可以调用的，比如 undefined.toString()
 
 此时你肯定会有疑问，这不对呀，明明 '1'.toString() 是可以使用的。其实在这种情况下，'1' 已经不是原始类型了，而是被强制转换成了 String 类型也就是对象类型，所以可以调用 toString 函数。
