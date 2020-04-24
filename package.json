@@ -1,31 +1,26 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "amelia blog",
   "main": "index.js",
   "scripts": {
     "lint": "lint-md ./docs/blog",
     "lint:fix": "lint-md ./docs --fix",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "commit": "npx git-cz"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run lint"
     }
   },
-  "lint-staged": {
-    "*.{md}": [
-      "lint-md",
-      "git add"
-    ]
-  },
-  "keywords": [],
-  "author": "",
+  "author": "lmjben",
   "license": "ISC",
   "devDependencies": {
-    "husky": "^2.4.1",
-    "lint-staged": "^8.2.1",
+    "@vuepress/plugin-back-to-top": "^1.2.0",
+    "@vuepress/plugin-medium-zoom": "^1.2.0",
+    "husky": "^4.0.3",
     "lint-md": "^0.2.0",
     "prettier": "1.19.1"
   },
