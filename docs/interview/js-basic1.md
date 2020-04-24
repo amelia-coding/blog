@@ -3,6 +3,7 @@
 :tada: :100:
 
 JS 基础知识点及常考面试题（一）
+
 JS 对于每位前端开发都是必备技能，在小册中我们也会有多个章节去讲述这部分的知识。首先我们先来熟悉下 JS 的一些常考和容易混乱的基础知识点。
 
 原始（Primitive）类型
@@ -131,7 +132,7 @@ return 0
 toString() {
 return '1'
 },
-[Symbol.toPrimitive]() {
+[Symbol.toPrimitive](.) {
 return 2
 }
 }

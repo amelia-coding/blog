@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /new-logo.jpg
-heroText: Amelia的前端博客
+heroText: Amelia 的前端博客
 tagline: 路漫漫其修远兮
 actionText: 开始阅读 →
 actionLink: /blog/
