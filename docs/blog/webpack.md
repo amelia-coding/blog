@@ -1,3 +1,6 @@
+https://mp.weixin.qq.com/s/UdsP3u_LR64dzffNPCx-2g
+https://mp.weixin.qq.com/s/hN2yTtFLyFBWmOrKF-E8lQ
+
 # webpack
 
 ## 核心概念
@@ -6,9 +9,9 @@
 ### treeshaking
 ### 懒加载和预加载
 ### code spliting
-### loader 和 plugin
+### loader和plugin
 
-## webpack 原理
+## webpack原理
 
 ## 打包分析
 
@@ -28,7 +31,7 @@
 
 ### babel
 
-- babel-preset-env 替代 babel-preset-2015、stage-0
+- babel-preset-env替代babel-preset-2015、stage-0
 - useBuiltIns 选项与 Polyfill
 
 # 参考
