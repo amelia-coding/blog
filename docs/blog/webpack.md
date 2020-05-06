@@ -1,6 +1,3 @@
-https://mp.weixin.qq.com/s/UdsP3u_LR64dzffNPCx-2g
-https://mp.weixin.qq.com/s/hN2yTtFLyFBWmOrKF-E8lQ
-
 # webpack
 
 ## 核心概念
@@ -37,3 +34,5 @@ https://mp.weixin.qq.com/s/hN2yTtFLyFBWmOrKF-E8lQ
 # 参考
 
 1. [再见，babel-preset-2015](https://zhuanlan.zhihu.com/p/29506685)
+2. https://mp.weixin.qq.com/s/UdsP3u_LR64dzffNPCx-2g
+3. https://mp.weixin.qq.com/s/hN2yTtFLyFBWmOrKF-E8lQ
