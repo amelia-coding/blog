@@ -117,7 +117,6 @@
 
 ## 016-合并两个或 k 个有序链表
 
-
 ```js
 /**
 function ListNode(x){
@@ -177,7 +176,7 @@ function merge(pHead1, pHead2) {
 
 ## 020-包含 min 函数的栈
 
-```plain
+```js
 var stack = [];
 var minStack = [];
 let tmp = null;
@@ -201,4 +200,49 @@ function min() {
   return minStack[minStack.length - 1]
 }
 ```
+## 036-两个链表的第一个公共结点
 
+https://blog.csdn.net/weixin_40853073/article/details/81706773
+
+## 055-链表中环的入口结点
+
+判断一个链表有环？环的长度？出入环节点？
+
+提示：追赶问题，前进次数 * 速度差
+
+## 026-二叉搜索树与双向链表
+
+```js
+/**
+明确Convert函数的功能。
+输入：输入一个二叉搜索树的根节点。
+过程：将其转化为一个有序的双向链表。
+输出：返回该链表的头节点。
+
+明确成员变量pLast的功能。
+pLast用于记录当前链表的末尾节点。
+
+明确递归过程。
+递归的过程就相当于按照中序遍历，将整个树分解成了无数的小树，然后将他们分别转化成了一小段一小段的双向链表。再利用pLast记录总的链表的末尾，然后将这些小段链表一个接一个地加到末尾。
+**/
+private TreeNode pLast = null;
+public TreeNode Convert(TreeNode root) {
+ if (root == null)
+     return null;
+ 
+ // 如果左子树为空，那么根节点root为双向链表的头节点
+ TreeNode head = Convert(root.left);
+ if (head == null)
+     head = root;
+ 
+ // 连接当前节点root和当前链表的尾节点pLast
+ root.left = pLast;
+ if (pLast != null)
+     pLast.right = root;
+ pLast = root;
+ 
+ Convert(root.right);
+ 
+ return head;
+}
+```
