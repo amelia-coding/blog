@@ -31,7 +31,7 @@ module.exports = {
         {
           title: "JS",
           collapsable: false,
-          children: ["js","js-module"],
+          children: ["js", "js-module"],
         },
         {
           title: "CSS",
@@ -51,7 +51,7 @@ module.exports = {
         {
           title: "框架",
           collapsable: false,
-          children: [],
+          children: ["react-hook"],
         },
         {
           title: "性能优化",
@@ -59,10 +59,15 @@ module.exports = {
           children: ["performance"],
         },
         {
-          title: "工程化与持续构建",
+          title: "工程化",
           collapsable: false,
-          children: ["webpack"],
+          children: ["webpack","DI","Serverless"],
         },
+        {
+          title: "编程基础",
+          collapsable: false,
+          children: ["sort"],
+        }
       ],
       "/interview/": [{
         title: "JS",
