@@ -31,7 +31,7 @@ module.exports = {
         {
           title: "JS",
           collapsable: false,
-          children: [],
+          children: ["js","js-module"],
         },
         {
           title: "CSS",
@@ -56,7 +56,7 @@ module.exports = {
         {
           title: "性能优化",
           collapsable: false,
-          children: [],
+          children: ["performance"],
         },
         {
           title: "工程化与持续构建",
