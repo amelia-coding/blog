@@ -61,7 +61,7 @@ module.exports = {
         {
           title: "工程化",
           collapsable: false,
-          children: ["webpack","DI","Serverless"],
+          children: ["webpack"],
         },
         {
           title: "编程基础",
