@@ -5,14 +5,7 @@
 https://amelia-coding.github.io/
 
 <hr>
-
-**| HTML**
-
-**| CSS**
-
-**| JavaScript**<br>
-
-**| 函数式编程**
+**| JavaScript深度剖析**
 
 **| TypeScript**
 
