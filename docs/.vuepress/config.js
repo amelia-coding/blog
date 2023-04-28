@@ -1,6 +1,6 @@
 module.exports = {
   title: "Amelia学前端",
-  description: "我的前端日常日志，学习共勉",
+  description: "我的前端学习日志，共勉",
   head: [
     ["link", { rel: "icon", href: "/new-logo.jpg" }]
   ],
@@ -20,6 +20,10 @@ module.exports = {
       {
         text: "阅读",
         link: "/book/",
+      },
+      {
+        text: "代码",
+        link: "https://github.com/amelia-coding/coding",
       },
     ],
     sidebar: {
@@ -62,17 +66,12 @@ module.exports = {
           title: "工程化",
           collapsable: false,
           children: ["webpack"],
-        },
-        {
-          title: "编程基础",
-          collapsable: false,
-          children: ["sort"],
         }
       ],
       "/interview/": [{
         title: "JS",
         collapsable: false,
-        children: ["js-basic1"],
+        children: ["interview"],
       }],
       "": []
     },
