@@ -21,10 +21,8 @@ jobs:
       with:
         node-version: '16.x'
         cache: 'pnpm'
-
-    - name: build
-      run: pnpm install
-      run: pnpm run build
+    - run: pnpm install
+    - run: pnpm run build
       
     - name: deploy amelia-coding.github.io/master
       uses: peaceiris/actions-gh-pages@v2
