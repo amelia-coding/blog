@@ -22,8 +22,6 @@ jobs:
 
     - name: Use pnpm
       uses: pnpm/action-setup@0609f0983b7a228f052f81ef4c3d6510cae254ad
-      with:
-        node-version: '16.x'
       
     - run: pnpm ci
     - run: pnpm run build
