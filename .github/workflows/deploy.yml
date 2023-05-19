@@ -11,22 +11,22 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+    - uses: pnpm/action-setup@v2
       with:
-          persist-credentials: false
+        version: 7
      
     - name: Use Node.js 16.x  
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
         node-version: '16.x'
+        cache: 'pnpm'
 
-    - name: Use pnpm
-      uses: pnpm/action-setup@0609f0983b7a228f052f81ef4c3d6510cae254ad
-      
-    - run: pnpm ci
+    - name: build
+    - run: pnpm install
     - run: pnpm run build
       
-    - name: Deploy amelia-coding.github.io/master
+    - name: deploy amelia-coding.github.io/master
       uses: peaceiris/actions-gh-pages@v2
       env:
         ACCESS_TOKEN : ${{ secrets.ACCESS_TOKEN  }}
