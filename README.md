@@ -5,18 +5,3 @@
 https://amelia-coding.github.io/
 
 <hr>
-
-**| JavaScript深度剖析**
-
-**| TypeScript**
-
-**| Node**
-
-**| 前端框架**
-
-**| 打包工具**
-
-**| 数据结构及算法**
-
-**| 前端性能优化**
-
