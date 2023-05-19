@@ -9,15 +9,15 @@ hero:
     - text: GitHub
       link: /
 features:
-  - title: Start
+  - title: 学习
     emoji: 💎
-    description: Put hello description here
-  - title: GitHub
+    description: 关注前端新知识，不断累积
+  - title: 面试题
     emoji: 🌈
-    description: Put world description here
-  - title: '!'
+    description: 大厂常见面试题，面试经验分享
+  - title: 持续更新
     emoji: 🚀
-    description: Put ! description here
+    description: 作为个人博客，持续更新，希望自我学习的同时，帮助他人
 ---
 
 Amelia
