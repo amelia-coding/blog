@@ -2,9 +2,9 @@ language: node_js
 node_js:
   - lts/*
 install:
-  - npm install # npm ci
+  - pnpm install # npm ci
 script:
-  - npm run build
+  - pnpm run build
 deploy:
   provider: pages
   target-branch: master
