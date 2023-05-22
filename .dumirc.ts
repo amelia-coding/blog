@@ -7,9 +7,7 @@ export default defineConfig({
     footer: `Open-source MIT Licensed | Copyright © 2023-present
     <br />
     Powered by Amelia`,
-  },
-  base: '/blog',
-  publicPath:'/blog/'
+  }
 });
 
 

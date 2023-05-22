@@ -24,12 +24,12 @@ jobs:
     - run: pnpm install
     - run: pnpm run build
       
-    - name: deploy blog gh-pages
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: dist
+    # - name: deploy blog gh-pages
+    #   uses: JamesIves/github-pages-deploy-action@releases/v3
+    #   with:
+    #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+    #     BRANCH: gh-pages
+    #     FOLDER: dist
 
     - name: deploy
       # 该 Action 可以将当前仓库指定的某个目录下的文件上传到另一个仓库
