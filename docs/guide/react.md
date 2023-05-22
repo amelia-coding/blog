@@ -1,6 +1,6 @@
 ---
 nav:
-  title: 博客
+  title: 前端
   order: 0
 group:
   title: React

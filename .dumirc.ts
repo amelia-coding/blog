@@ -7,7 +7,8 @@ export default defineConfig({
     footer: `Open-source MIT Licensed | Copyright © 2023-present
     <br />
     Powered by Amelia`,
-  }
+  },
+  styles: [`.markdown blockquote { color:  #a0a1a7; }`],
 });
 
 

@@ -1,10 +1,10 @@
 ---
 nav:
-  title: 博客
+  title: 前端
   order: 0
 group:
   title: 基础
-order: 2
+order: 1
 ---
 
-# 前端跨域
+# 浏览器原理
