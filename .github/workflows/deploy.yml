@@ -37,6 +37,5 @@ jobs:
       env:
         REPO: git@github.com:amelia-coding/amelia-coding.github.io.git
         BRANCH: master
-        # 该目录都会上传到repo仓库
-        FOLDER: dist
+        FOLDER: dist   # 该目录都会上传到repo仓库
         SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
