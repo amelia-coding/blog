@@ -8,6 +8,7 @@ export default defineConfig({
     <br />
     Powered by Amelia`,
   },
+  base: '/blog'
 });
 
 
