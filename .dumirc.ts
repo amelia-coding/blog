@@ -8,7 +8,8 @@ export default defineConfig({
     <br />
     Powered by Amelia`,
   },
-  base: '/blog'
+  base: '/blog',
+  publicPath: '/blog'
 });
 
 
