@@ -24,7 +24,7 @@ jobs:
     - run: pnpm install
     - run: pnpm run build
       
-    - name: deploy amelia-coding.github.io/master
+    - name: deploy gh-pages
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         # 部署到你的目标仓库，这里就是你的仓库名
