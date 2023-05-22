@@ -40,4 +40,4 @@ jobs:
         REPO: git@github.com:amelia-coding/amelia-coding.github.io.git
         BRANCH: master
         FOLDER: build
-        SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
