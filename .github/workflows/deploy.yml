@@ -35,7 +35,7 @@ jobs:
       # 该 Action 可以将当前仓库指定的某个目录下的文件上传到另一个仓库
       uses: s0/git-publish-subdir-action@develop
       env:
-        REPO: https://github.com/amelia-coding/amelia-coding.github.io.git
+        REPO: git@github.com:amelia-coding/amelia-coding.github.io.git
         BRANCH: master
         # 该目录都会上传到repo仓库
         FOLDER: dist
