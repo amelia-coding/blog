@@ -30,6 +30,6 @@ jobs:
         # 部署到你的目标仓库，这里就是你的仓库名
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         # 部署到 gh-pages 分支
-        BRANCH: master
+        BRANCH: gh-pages
         # 部署目录为 VuePress 的默认输出目录
         FOLDER: dist
