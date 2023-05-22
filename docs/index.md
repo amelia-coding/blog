@@ -12,7 +12,7 @@ features:
   - title: 学习
     emoji: 💎
     description: 关注前端新知识，不断累积
-  - title: 算法
+  - title: 编程题
     emoji: 🌈
     description: Leetcode和常见算法题，大厂常见面试题
   - title: 持续更新

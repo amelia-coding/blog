@@ -1,6 +1,6 @@
 ---
 nav:
-  title: 编程
+  title: 编程题
   order: 1
 toc: content
 ---
