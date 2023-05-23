@@ -25,9 +25,12 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "copy-webpack-plugin": "^11.0.0",
     "dumi": "^2.1.22",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "workbox": "^0.0.0",
+    "workbox-webpack-plugin": "^6.5.4"
   }
 }
