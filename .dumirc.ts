@@ -2,6 +2,8 @@ import { defineConfig } from 'dumi';
 const { GenerateSW, InjectManifest } = require('workbox-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+const cacheId = 'https://amelia-coding.github.io/'
+
 export default defineConfig({
   themeConfig: {
     name: 'Amelia',
@@ -25,7 +27,7 @@ export default defineConfig({
     ]);
 
     config.plugin('GenerateSW').use(GenerateSW, [{
-      cacheId: 'seed-cache',
+      cacheId,
       importScripts: ['https://g.yppstatic.com/workbox/4.3.1/workbox-sw.js'],
       skipWaiting: true, //跳过waiting状态
       clientsClaim: true, //通知让新的sw立即在页面上取得控制权
@@ -42,7 +44,7 @@ export default defineConfig({
           urlPattern: /.*\.js.*/i,
           handler: 'CacheFirst',
           options: {
-            cacheName: 'seed-js',
+            cacheName: `${cacheId}-js`,
             expiration: {
               maxEntries: 20, //最多缓存20个，超过的按照LRU原则删除
               maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
@@ -53,7 +55,7 @@ export default defineConfig({
           urlPattern: /.*css.*/,
           handler: 'CacheFirst',
           options: {
-            cacheName: 'seed-css',
+            cacheName: `${cacheId}-css`,
             expiration: {
               maxEntries: 30, //最多缓存30个，超过的按照LRU原则删除
               maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
