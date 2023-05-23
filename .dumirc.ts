@@ -18,11 +18,16 @@ export default defineConfig({
     fileName: 'asset-manifest.json',
   },
   chainWebpack: (config: any) => {
+    /**
+     * 
+     * 在这个示例中，我们同时添加了InjectManifest和GenerateSW插件。GenerateSW插件用于自动生成Service Worker文件，并配置了缓存策略；InjectManifest插件则将手写的Service Worker文件注入到应用程序中，从而使Webpack打包的清单能够被正确地注入到Service Worker文件中。
+     * 另外需要注意的是，在同时使用GenerateSW和InjectManifest插件时，你需要将自己编写的Service Worker文件命名为sw.js，并将GenerateSW插件生成的Service Worker文件命名为service-worker.js。这样可以避免两个插件生成的文件发生冲突。
+     * 
+     */
     config.plugin('InjectManifest').use(InjectManifest, [
       {
         swSrc: './scripts/sw.js',
-        swDest: 'sw.js',
-        dontCacheBustURLsMatching: /\.\w{8}\./,
+        swDest: 'sw.js'
       },
     ]);
 
@@ -32,10 +37,8 @@ export default defineConfig({
       skipWaiting: true, //跳过waiting状态
       clientsClaim: true, //通知让新的sw立即在页面上取得控制权
       cleanupOutdatedCaches: true, //删除过时、老版本的缓存
-
       //最终生成的service worker地址，这个地址和webpack的output地址有关
       swDest: './service-worker.js',
-      include: [],
       //缓存规则，可用正则匹配请求，进行缓存
       //这里将js、css、还有图片资源分开缓存，可以区分缓存时间(虽然这里没做区分。。)
       //由于种子农场此站点较长时间不更新，所以缓存时间可以稍微长一些
@@ -75,7 +78,6 @@ export default defineConfig({
         },
       ],
     }])
-
 
     config.plugin('copy-webpack-plugin').use(CopyWebpackPlugin, [
       {
