@@ -2,7 +2,7 @@ import { defineConfig } from 'dumi';
 const { GenerateSW, InjectManifest } = require('workbox-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const cacheId = 'amelia-coding.github.io'
+const cacheId = 'amelia:static'
 
 export default defineConfig({
   themeConfig: {
@@ -44,7 +44,7 @@ export default defineConfig({
           urlPattern: /.*\.js.*/i,
           handler: 'CacheFirst',
           options: {
-            cacheName: `${cacheId}-js`,
+            cacheName: `${cacheId}:js`,
             expiration: {
               maxEntries: 20, //最多缓存20个，超过的按照LRU原则删除
               maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
@@ -55,7 +55,7 @@ export default defineConfig({
           urlPattern: /.*css.*/,
           handler: 'CacheFirst',
           options: {
-            cacheName: `${cacheId}-css`,
+            cacheName: `${cacheId}:css`,
             expiration: {
               maxEntries: 30, //最多缓存30个，超过的按照LRU原则删除
               maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
