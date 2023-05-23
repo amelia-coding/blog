@@ -2,7 +2,7 @@ import { defineConfig } from 'dumi';
 const { GenerateSW, InjectManifest } = require('workbox-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const cacheId = 'https://amelia-coding.github.io/'
+const cacheId = 'amelia-coding.github.io'
 
 export default defineConfig({
   themeConfig: {
