@@ -1,10 +1,10 @@
 ---
 group:
   title: 基础
-order: 4
+order: 3
 toc: content
 ---
 
-# JavaScript
+# TypeScript
 
-## 函数式编程
+##

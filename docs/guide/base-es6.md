@@ -5,6 +5,6 @@ order: 4
 toc: content
 ---
 
-# TypeScript
+# ECMAScript 新特性
 
 ##

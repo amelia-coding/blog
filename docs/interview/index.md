@@ -1,7 +1,7 @@
 ---
 nav:
   title: 面试题
-  order: 3
+order: 3
 toc: content
 ---
 
