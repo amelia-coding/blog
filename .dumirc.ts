@@ -13,7 +13,7 @@ export default defineConfig({
     Powered by Amelia`,
   },
   styles: [`.markdown blockquote { color:  #a0a1a7; }`],
-  headScripts: ['./register.js'],
+  headScripts: ['/register.js'],
   manifest: {
     fileName: 'asset-manifest.json',
   },
