@@ -55,7 +55,7 @@ export default defineConfig({
           },
         },
         {
-          urlPattern: /\.js$/,
+          urlPattern: /\.css$/,
           handler: 'CacheFirst',
           options: {
             cacheName: `${cacheId}:css`,
