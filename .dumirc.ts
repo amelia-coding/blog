@@ -44,7 +44,7 @@ export default defineConfig({
       //由于种子农场此站点较长时间不更新，所以缓存时间可以稍微长一些
       runtimeCaching: [
         {
-          urlPattern: /.*\.js.*/i,
+          urlPattern: /\.js$/,
           handler: 'CacheFirst',
           options: {
             cacheName: `${cacheId}:js`,
@@ -55,7 +55,7 @@ export default defineConfig({
           },
         },
         {
-          urlPattern: /.*css.*/,
+          urlPattern: /\.js$/,
           handler: 'CacheFirst',
           options: {
             cacheName: `${cacheId}:css`,
