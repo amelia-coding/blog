@@ -1,6 +1,6 @@
 ---
 nav:
-  title: 面试题
+  title: 面试
 order: 3
 toc: content
 ---

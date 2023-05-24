@@ -1,6 +1,6 @@
 ---
 nav:
-  title: 编程题
+  title: 面试
   order: 1
 toc: content
 ---
@@ -9,7 +9,7 @@ toc: content
 
 以下罗列了一些常见的手写题，务必要必知必会。
 
-更多题目请前往 [github](https://github.com/amelia-coding/coding)
+更多题目请前往 [Github](https://github.com/amelia-coding/coding)
 
 ## 实现一个 instanceof
 
