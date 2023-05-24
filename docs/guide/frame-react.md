@@ -1,7 +1,7 @@
 ---
 group:
-  title: React
-  order: 1
+  title: 框架
+order: 1
 ---
 
-# 基础
+# React 框架原理

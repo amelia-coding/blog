@@ -1,7 +1,7 @@
 ---
 group:
-  title: Vue
-  order: 2
+  title: 框架
+order: 2
 ---
 
-# 基础
+# Vue.js 框架原理
