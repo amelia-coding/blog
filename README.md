@@ -4,18 +4,15 @@
 
 博客地址 ： https://amelia-coding.github.io/
 
-
 # 最近阅读
 
-[Serverless 掀起新的前端技术变革](https://github.com/nodejh/nodejh.github.io/issues/49)
-
-
-# React/Vue
-
-[卡松的React技术博客](https://react.iamkasong.com/)
-
-
-# 前端趋势
-
+- [Serverless 掀起新的前端技术变革](https://github.com/nodejh/nodejh.github.io/issues/49)
+- [卡松的React技术博客](https://react.iamkasong.com/)
 
 # 技术峰会
+- [GMTC 全球大前端技术大会 ](https://gmtc.infoq.cn/)
+- [Qcon 全球软件开发大会](https://qcon.infoq.cn/)
+- [ArchSummit 全球架构师峰会](https://qcon.infoq.cn/)
+- [InfoQ 全部会议](https://con.infoq.cn/archives?conf=all)
+
+
