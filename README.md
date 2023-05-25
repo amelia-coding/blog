@@ -7,11 +7,15 @@
 
 # 最近阅读
 
+[Serverless 掀起新的前端技术变革](https://github.com/nodejh/nodejh.github.io/issues/49)
 
-# React
 
+# React/Vue
 
-# Vue
+[卡松的React技术博客](https://react.iamkasong.com/)
 
 
 # 前端趋势
+
+
+# 技术峰会
