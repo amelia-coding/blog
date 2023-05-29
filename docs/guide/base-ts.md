@@ -1992,4 +1992,4 @@ class Greeter {
 
 ## 相关链接
 
-- http://semlinker.com/ts-comprehensive-tutorial/#十七、参考资源
+- http://semlinker.com/ts-comprehensive-tutorial/
