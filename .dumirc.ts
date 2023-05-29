@@ -3,6 +3,10 @@ const { GenerateSW, InjectManifest } = require('workbox-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const cacheId = 'amelia:static'
+const env = process.env.NODE_ENV
+const isDev = env === 'development'
+
+console.log("isDev", isDev)
 
 export default defineConfig({
   themeConfig: {
@@ -13,16 +17,14 @@ export default defineConfig({
     Powered by Amelia`,
   },
   styles: [`.markdown blockquote { color:  #a0a1a7; }`],
-  headScripts: ['/register.js'],
+  headScripts: isDev ? [] : ['/register.js'],
   manifest: {
     fileName: 'asset-manifest.json',
   },
   chainWebpack: (config: any) => {
     /**
-     * 
      * 在这个示例中，我们同时添加了InjectManifest和GenerateSW插件。GenerateSW插件用于自动生成Service Worker文件，并配置了缓存策略；InjectManifest插件则将手写的Service Worker文件注入到应用程序中，从而使Webpack打包的清单能够被正确地注入到Service Worker文件中。
      * 另外需要注意的是，在同时使用GenerateSW和InjectManifest插件时，你需要将自己编写的Service Worker文件命名为sw.js，并将GenerateSW插件生成的Service Worker文件命名为service-worker.js。这样可以避免两个插件生成的文件发生冲突。
-     * 
      */
     config.plugin('InjectManifest').use(InjectManifest, [
       {
