@@ -8,4 +8,4 @@ nav:
 
 Hi，我是 Amelia，带你一起学习。
 
-<img src="../assets/logo.jpg" width="400px">
+<img src="../assets/logo.jpeg" width="400px">
