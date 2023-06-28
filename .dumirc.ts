@@ -18,7 +18,6 @@ export default defineConfig({
   },
   styles: [`.markdown blockquote { color:  #a0a1a7; }`],
   headScripts: isDev ? [] : ['/register.js'],
-  ...(process.env.NODE_ENV === 'development' ? {} : { ssr: {} }),
   manifest: {
     fileName: 'asset-manifest.json',
   },
