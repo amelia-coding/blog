@@ -1,7 +1,7 @@
 ---
 nav:
   title: 前端
-  order: 999
+  order: 0
 ---
 
 # 关于我

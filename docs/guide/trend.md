@@ -1,7 +1,7 @@
 ---
 nav:
   title: 前端
-  order: 1
+  order: 0
 toc: content
 ---
 

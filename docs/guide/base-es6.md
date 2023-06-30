@@ -7,7 +7,7 @@ toc: content
 
 # ECMAScript
 
-持续更新...
+ECMAScript 持续更新...
 
 ## ES6(2015)
 
