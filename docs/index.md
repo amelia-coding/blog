@@ -4,7 +4,7 @@ hero:
   title: Amelia
   description: 路漫漫其修远兮，吾将上下而求索
   actions:
-    - text: 开始
+    - text: 博客
       link: https://www.yuque.com/ameliad/gngv44
     - text: GitHub
       link: https://github.com/amelia-coding
