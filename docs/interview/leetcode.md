@@ -1,6 +1,8 @@
 ---
 nav:
   title: 面试
+group:
+  title: 算法总结
 order: 2
 toc: content
 ---

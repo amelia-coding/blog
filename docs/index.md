@@ -5,7 +5,7 @@ hero:
   description: 路漫漫其修远兮，吾将上下而求索
   actions:
     - text: 开始
-      link: /guide/about
+      link: https://www.yuque.com/ameliad/gngv44
     - text: GitHub
       link: https://github.com/amelia-coding
 features:
@@ -19,5 +19,3 @@ features:
     emoji: 🚀
     description: 作为个人博客，持续更新，希望自我学习的同时，帮助他人
 ---
-
-By Amelia
